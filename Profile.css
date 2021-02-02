@@ -1,0 +1,81 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+}
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #808080;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+body{
+  background-color:black
+  
+  
+  
+  
+}
+
+p {   text-align:left; font-family:Arial; font-size:15px; margin:10px; padding:5px; color: black; }
+
+h1{   text-align:center;   color:Black;   font-family:"Trebuchet MS", Helvetica, sans-serif;   font-size:40px;   margin:5px;   padding:5px;       }
+
+
+h2 {  text-align:center;   color: White;   font-family:"Trebuchet MS", Helvetica, sans-serif;   font-size:40px;   margin:5px;   padding:5px;       }
+
+h3 {  text-align:center;   color: White;   font-family:"Trebuchet MS", Helvetica, sans-serif;   font-size:40px;   margin:5px;   padding:5px;       }
